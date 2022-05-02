@@ -83,6 +83,11 @@ body {
   letter-spacing: 0.06em;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #188ce8;
+}
+
 /*Features*/
 .feature-title {
   color: var(--title-text-color);
@@ -100,6 +105,9 @@ body {
   letter-spacing: 0.03em;
 }
 
+.section.another-background {
+  background-color: #f5f4fa;
+}
 .section .title {
   color: var(--title-text-color);
 
@@ -111,6 +119,9 @@ body {
 }
 
 /*Our team*/
+.team .team-item {
+  background-color: var(--primary-bg-color);
+}
 .team .teammate-title {
   color: var(--title-text-color);
 
