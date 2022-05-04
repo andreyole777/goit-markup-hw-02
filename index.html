@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная страница студии</title>
-    <link rel="stylesheet" href="./css/slyles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/slyles.css" />
   </head>
   <body>
     <header>
@@ -33,24 +33,23 @@
       </nav>
       <ul class="contacts list">
         <li>
-          <a href="mailto:info@devstudio.com" class="contact link">info@devstudio.com</a>
+          <a href="mailto:info@devstudio.com" class="contact-link link">info@devstudio.com</a>
         </li>
         <li>
-          <a href="tel:+380961111111" class="contact link">+38 096 111 11 11</a>
+          <a href="tel:+380961111111" class="contact-link link">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <main>
       <!--Баннер-->
-      <section class="hero">
-        <img src="./images/main/banner.jpg" alt="Баннер" width="1600" height="600" />
+      <section class="hero-section">
         <h1 class="hero-title">Эффективные решения для Вашего бизнеса</h1>
         <a class="button link" href="">Заказать услугу</a>
       </section>
       <!--Особенности-->
-      <section class="section">
+      <section class="features-section">
         <!--Скрытый заголовок, которого нет в макете-->
-        <h2>Особенности</h2>
+        <h2 class="hidden-section-title">Особенности</h2>
         <ul class="features list">
           <li>
             <h3 class="feature-title">Внимание к деталям</h3>
@@ -79,8 +78,8 @@
         </ul>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="section">
-        <h2 class="title">Чем мы занимаемся</h2>
+      <section class="work-section">
+        <h2 class="section-title">Чем мы занимаемся</h2>
         <ul class="work list">
           <li>
             <img src="./images/main/whatwedo1.jpg" alt="Картинка1" width="370" height="294" />
@@ -95,8 +94,8 @@
       </section>
 
       <!--Наша команда-->
-      <section class="section another-background">
-        <h2 class="title">Наша команда</h2>
+      <section class="team-section">
+        <h2 class="section-title">Наша команда</h2>
         <ul class="team list">
           <li class="team-item">
             <img src="./images/main/teammate1.jpg" alt="Член команды" width="270" height="260" />
@@ -124,14 +123,21 @@
 
     <!--Футер-->
     <footer>
-      <img src="./images/main/footer.jpg" alt="Подвал" width="1600" height="252" />
       <a lang="en" href="./index.html" class="logo link"
         >Web<span class="white-span">Studio</span></a
       >
       <address class="address-section">
-        <p class="address-text">г. Киев, пр-т Леси Украинки, 26</p>
-        <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
-        <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+        <ul class="list">
+          <li>
+            <a href="" class="address-link-white">г. Киев, пр-т Леси Украинки, 26</a>
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="address-link">info@devstudio.com</a>
+          </li>
+          <li>
+            <a href="tel:+380961111111" class="address-link">+38 096 111 11 11</a>
+          </li>
+        </ul>
       </address>
     </footer>
   </body>

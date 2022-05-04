@@ -17,12 +17,18 @@ body {
 }
 
 .link {
+  color: var(--title-text-color);
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 
 /*Navigation*/
@@ -36,27 +42,17 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo .black-span {
+.black-span {
   color: var(--title-text-color);
 }
 
-.logo .white-span {
+.white-span {
   color: var(--white-text-color);
   background-color: #2f303a;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus {
-  color: var(--accent-color);
-}
-
-.contacts .contact {
+.contact-link {
   color: var(--primary-text-color);
-}
-
-.contacts .contact:hover,
-.contacts .contact:focus {
-  color: var(--accent-color);
 }
 
 /*Hero*/
@@ -88,6 +84,16 @@ body {
   background-color: #188ce8;
 }
 
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
 /*Features*/
 .feature-title {
   color: var(--title-text-color);
@@ -105,24 +111,15 @@ body {
   letter-spacing: 0.03em;
 }
 
-.section.another-background {
+/*Our team*/
+.team-section {
   background-color: #f5f4fa;
 }
-.section .title {
-  color: var(--title-text-color);
 
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-/*Our team*/
-.team .team-item {
+.team-item {
   background-color: var(--primary-bg-color);
 }
-.team .teammate-title {
+.teammate-title {
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -132,7 +129,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team .teammate-text {
+.teammate-text {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -142,22 +139,33 @@ body {
 /*Footer*/
 .address-section {
   background-color: #2f303a;
-
+  
   font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.address-section .address-text {
+.address-link-white {
   color: var(--white-text-color);
+
+  text-decoration: none;
 }
 
-.address-section .link {
+.address-link-white:hover,
+.address-link-white:focus {
+  color: var(--accent-color);
+}
+
+.address-link {
   color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
 }
 
-.address-section .link:hover,
-.address-section .link:focus {
+.address-link:hover,
+.address-link:focus {
   color: var(--accent-color);
 }
 
@@ -184,7 +192,7 @@ body {
 }
 
 /*Portfolio cards styles*/
-.portfolio .title {
+.portfolio-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -194,10 +202,11 @@ body {
   text-align: left;
 }
 
-.portfolio .category-text {
+.category-text {
   color: var(--primary-text-color);
 
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.88;
   letter-spacing: 0.03em;
 }
